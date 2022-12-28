@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:wght@700&display=swap');
+
+.header{
+    width: 100%;
+    //background-color: #121212;
+    background-color: rgb(18 18 18 / 30%);
+    backdrop-filter: blur(15px);
+    //box-shadow: 0 0 20px rgba(41, 41, 41, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    
+    nav{
+        margin-right: 30px;
+        width: 50%;
+        height: 60px;
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            list-style: none;
+
+            li{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 2rem;
+                    letter-spacing: 0.5px;
+                }
+
+                ::before{
+                    content: " ";
+                    width: 5px;
+                    height: 50%;
+                    background-color: rgb(27, 217, 77, 1.0);
+                    position: absolute;
+                    margin-left: -10px;
+                    visibility: hidden;
+                }
+            }
+
+            @keyframes menu-side-bar-1{
+                0%{
+                    visibility: visible;
+                }
+
+                100%{
+                    margin-left: 65px;
+                    visibility: visible;
+                }
+            }
+
+            li:nth-child(1):hover ::before{
+                //background-color: #ff8343;
+                animation-name: menu-side-bar-1;
+                animation-delay: 0.3s;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes menu-side-bar-2{
+                0%{
+                    visibility: visible;
+                }
+
+                100%{
+                    margin-left: 70px;
+                    visibility: visible;
+                }
+            }
+
+            li:nth-child(2):hover ::before{
+                animation-name: menu-side-bar-2;
+                animation-delay: 0.3s;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes menu-side-bar-3{
+                0%{
+                    visibility: visible;
+                }
+
+                100%{
+                    margin-left: 70px;
+                    visibility: visible;
+                }
+            }
+
+            li:nth-child(3):hover ::before{
+                animation-name: menu-side-bar-3;
+                animation-delay: 0.3s;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes menu-side-bar-4{
+                0%{
+                    visibility: visible;
+                }
+
+                100%{
+                    margin-left: 100px;
+                    visibility: visible;
+                }
+            }
+
+            li:nth-child(4):hover ::before{
+                animation-name: menu-side-bar-4;
+                animation-delay: 0.3s;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes shine-menu{
+                0%{
+                color: #fff;
+                backdrop-filter: blur(15px);
+                }
+                
+                50%{
+                    color: #1bd94d;
+                    filter: drop-shadow(0 0 10px rgba(27, 217, 77, 0.3));
+                    backdrop-filter: none;
+                }
+                100%{
+                color: rgba(255, 255, 255, 1.0);
+                backdrop-filter: blur(15px);
+                }
+            }
+
+            li:nth-child(1) a{
+                animation-name: shine-menu;
+                animation-delay: 3s;
+                animation-duration: 2s;
+            }
+
+            li:nth-child(2) a{
+                animation-name: shine-menu;
+                animation-delay: 4s;
+                animation-duration: 2s;
+            }
+
+            li:nth-child(3) a{
+                animation-name: shine-menu;
+                animation-delay: 5s;
+                animation-duration: 2s;
+            }
+
+            li:nth-child(4) a{
+                animation-name: shine-menu;
+                animation-delay: 6s;
+                animation-duration: 2s;
+            }
+
+        }
+    }
+}
