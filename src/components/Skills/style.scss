@@ -5,9 +5,131 @@
     top: 200%;
     background-color: #161616;
     padding: 100px 50px 0 50px;
+
+    h2{
+        font-size: 2rem;
+        font-family: sans-serif;
+        color: #ececec;
+        text-decoration: underline;
+        letter-spacing: 1.5px;
+    }
+    
+    .skills-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-evenly;
+    
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    overflow: visible;
+
+    .skill-format{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+
+        transition: 0.5s ease-in-out;
+        
+        
+        span{
+            color: #161616;
+            font-family: "Bebas Neue", cursive;
+            transition: 0.5s ease-in-out;
+            letter-spacing: 0.5px;
+        }
+        
+    }
+    
+    .skill-format:hover{
+        //background-color: rgba(221, 75, 37, 1.0);
+        
+    }
+    
+    .skill-format:nth-child(1):hover{
+        box-shadow: 0 0 10px rgba(221, 75, 37, 0.5);
+
+        .skills-icon{
+            color: rgba(221, 75, 37, 0.7);
+        }
+
+        span{
+            color: rgba(221, 75, 37, 0.7);
+        }
+    }
+
+    .skill-format:nth-child(2):hover{
+        box-shadow: 0 0 10px rgba(0, 104, 186, 0.5);
+
+        .skills-icon{
+            color: #0068ba;
+        }
+
+        span{
+            color: #0068ba;
+        }
+    }
+
+    .skill-format:nth-child(3):hover{
+        box-shadow: 0 0 10px rgb(239, 216, 29, 0.5);
+
+        .skills-icon{
+            color: rgb(239 216 29);
+        }
+
+        span{
+            color: rgb(239, 216, 29, 1.0);
+        }
+    }
+
+    .skill-format:nth-child(4):hover{
+        box-shadow: 0 0 10px rgba(199, 100, 148, 0.5);
+
+        .skills-icon{
+            color: rgba(199, 100, 148, 1.0);
+        }
+
+        span{
+            color: rgba(199, 100, 148, 1.0);
+        }
+    }
+
+
+    .skill-format:nth-child(5):hover{
+        box-shadow: 0 0 10px rgba(94, 211, 243, 0.5);
+
+        .skills-icon{
+            color: rgba(94, 211, 243, 1.0);
+        }
+
+        span{
+            color: rgba(94, 211, 243, 1.0);
+        }
+    }
+
+    .skill-format:nth-child(6):hover{
+        box-shadow: 0 0 10px rgba(232, 78, 49, 0.5);
+
+        .skills-icon{
+            color: rgba(232, 78, 49, 1.0);
+        }
+
+        span{
+            color: rgba(232, 78, 49, 1.0);
+        }
+    }
+    
+    .skills-icon{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 8rem;
+        transition: 0.5s ease-in-out;
+    }
 }
 
-.cor{
-    color: #ff0043;
-    font-size: 3rem;
 }

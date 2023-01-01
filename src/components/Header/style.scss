@@ -23,25 +23,96 @@
             justify-content: space-between;
             height: 100%;
             list-style: none;
-
+            
             li{
+                
+                position: relative;
+                cursor: pointer; 
+                overflow: hidden;
+                margin: 0 20px;
+                
                 a{
-                    color: #fff;
+                    color: #cfcfcf;
                     text-decoration: none;
                     font-family: 'Bebas Neue', cursive;
                     font-size: 2rem;
                     letter-spacing: 0.5px;
+                    transition: 0.5s ease-in-out;
+                }
+                
+                
+            }
+            
+            li::before{
+                letter-spacing: 0.5px;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 2rem;
+                width: 0px;
+                height: 100%;
+                border-right: 3px solid #1eff00;
+                position: absolute;
+                transition: 0.4s ease-in-out;
+                overflow: hidden;
+
+                top: 0;
+                left: 0;
+                visibility: hidden;
+            }
+             
+            li:nth-child(1)::before{
+                content: "Inicio";
+                background-image: linear-gradient(90deg, #00da1d, #5ce74f);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: 0 0 10px rgba(27, 217, 77, 0.3);
+            }
+
+            li:nth-child(2)::before{
+                content: "Sobre";
+                background-image: linear-gradient(90deg, #00da1d, #5ce74f);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: 0 0 10px rgba(27, 217, 77, 0.3);
+            }
+
+            li:nth-child(3)::before{
+                content: "Skills";
+                background-image: linear-gradient(90deg, #00da1d, #5ce74f);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: 0 0 10px rgba(27, 217, 77, 0.3);
+            }
+
+            li:nth-child(4)::before{
+                content: "Projetos";
+                background-image: linear-gradient(90deg, #00da1d, #5ce74f);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: 0 0 10px rgba(27, 217, 77, 0.3);
+            }
+
+            @keyframes under{
+                from{
+                    z-index: 0;
                 }
 
-                ::before{
-                    content: " ";
-                    width: 5px;
-                    height: 50%;
-                    background-color: rgb(27, 217, 77, 1.0);
-                    position: absolute;
-                    margin-left: -10px;
-                    visibility: hidden;
+                to{
+                    z-index: -1;
                 }
+            }
+
+            li:hover::before{
+                width: 100%;
+                visibility: visible;
+                animation-name: under;
+                animation-delay: 0.3s;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+            }
+
+            li:hover a{
+                transition-delay: 0.3s;
+                color: #00da1d;
             }
 
             @keyframes menu-side-bar-1{
@@ -55,13 +126,24 @@
                 }
             }
 
-            li:nth-child(1):hover ::before{
+            //li:nth-child(1):hover ::before{
                 //background-color: #ff8343;
-                animation-name: menu-side-bar-1;
-                animation-delay: 0.3s;
-                animation-duration: 0.5s;
-                animation-fill-mode: forwards;
+                //animation-name: menu-side-bar-1;
+                //animation-delay: 0.3s;
+                //animation-duration: 0.5s;
+                //animation-fill-mode: forwards;
+                //width: 70px;
+                //border-color: #00ff00;
+            //}
+/*
+            li:nth-child(1)::before{
+                content: "";
+                background-image: linear-gradient(90deg, #ff8343 50%, #00ff00 50%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                border-right: 5px solid #ff0043;
             }
+            */
 
             @keyframes menu-side-bar-2{
                 0%{
