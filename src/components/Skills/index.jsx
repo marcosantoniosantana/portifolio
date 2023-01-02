@@ -1,9 +1,13 @@
 import {DiHtml5, DiCss3, DiJsBadge, DiSass, DiReact, DiGit } from "react-icons/di";
 import "./style.scss"
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+AOS.init();
+
 export default function Skills(){
     return(
-        <section id="skills" className="skills">
+        <section id="skills" className="skills" data-aos="start-effect">
 
             <h2>Skills</h2>
 
@@ -28,7 +32,6 @@ export default function Skills(){
                     <DiSass className="skills-icon"/>
                     <span>SASS</span>
                 </figure>
-
 
                 <figure className="skill-format">
                     <DiReact className="skills-icon"/>

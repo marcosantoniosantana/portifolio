@@ -47,11 +47,6 @@
         
     }
     
-    .skill-format:hover{
-        //background-color: rgba(221, 75, 37, 1.0);
-        
-    }
-    
     .skill-format:nth-child(1):hover{
         box-shadow: 0 0 10px rgba(221, 75, 37, 0.5);
 
@@ -124,12 +119,64 @@
             color: rgba(232, 78, 49, 1.0);
         }
     }
-    
+  
     .skills-icon{
         color: rgba(255, 255, 255, 0.5);
         font-size: 8rem;
         transition: 0.5s ease-in-out;
     }
 }
+
+}
+
+[data-aos="start-effect"] {
+  opacity: 0;
+
+  &.aos-animate {
+    opacity: 1;
+
+    .skill-format:nth-child(1) .skills-icon{
+        fill: rgba(221, 75, 37, 1.0);
+        transition-delay: 0.3s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    .skill-format:nth-child(2) .skills-icon{
+        fill: #0068ba;
+        transition-delay: 0.5s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .skill-format:nth-child(3) .skills-icon{
+        fill: rgb(239 216 29);
+        transition-delay: 0.6s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .skill-format:nth-child(4) .skills-icon{
+        fill: rgba(199, 100, 148, 1.0);
+        transition-delay: 0.7s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .skill-format:nth-child(5) .skills-icon{
+        fill: rgba(94, 211, 243, 1.0);
+        transition-delay: 0.8s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .skill-format:nth-child(6) .skills-icon{
+        fill: rgba(232, 78, 49, 1.0);
+        transition-delay: 0.9s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+  }
 
 }
