@@ -2,10 +2,8 @@
 
 .header{
     width: 100%;
-    //background-color: #121212;
     background-color: rgb(18 18 18 / 30%);
     backdrop-filter: blur(15px);
-    //box-shadow: 0 0 20px rgba(41, 41, 41, 0.5);
     display: flex;
     justify-content: flex-end;
     padding: 10px;
@@ -115,90 +113,6 @@
                 color: #00da1d;
             }
 
-            @keyframes menu-side-bar-1{
-                0%{
-                    visibility: visible;
-                }
-
-                100%{
-                    margin-left: 65px;
-                    visibility: visible;
-                }
-            }
-
-            //li:nth-child(1):hover ::before{
-                //background-color: #ff8343;
-                //animation-name: menu-side-bar-1;
-                //animation-delay: 0.3s;
-                //animation-duration: 0.5s;
-                //animation-fill-mode: forwards;
-                //width: 70px;
-                //border-color: #00ff00;
-            //}
-/*
-            li:nth-child(1)::before{
-                content: "";
-                background-image: linear-gradient(90deg, #ff8343 50%, #00ff00 50%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                border-right: 5px solid #ff0043;
-            }
-            */
-
-            @keyframes menu-side-bar-2{
-                0%{
-                    visibility: visible;
-                }
-
-                100%{
-                    margin-left: 70px;
-                    visibility: visible;
-                }
-            }
-
-            li:nth-child(2):hover ::before{
-                animation-name: menu-side-bar-2;
-                animation-delay: 0.3s;
-                animation-duration: 0.5s;
-                animation-fill-mode: forwards;
-            }
-
-            @keyframes menu-side-bar-3{
-                0%{
-                    visibility: visible;
-                }
-
-                100%{
-                    margin-left: 70px;
-                    visibility: visible;
-                }
-            }
-
-            li:nth-child(3):hover ::before{
-                animation-name: menu-side-bar-3;
-                animation-delay: 0.3s;
-                animation-duration: 0.5s;
-                animation-fill-mode: forwards;
-            }
-
-            @keyframes menu-side-bar-4{
-                0%{
-                    visibility: visible;
-                }
-
-                100%{
-                    margin-left: 100px;
-                    visibility: visible;
-                }
-            }
-
-            li:nth-child(4):hover ::before{
-                animation-name: menu-side-bar-4;
-                animation-delay: 0.3s;
-                animation-duration: 0.5s;
-                animation-fill-mode: forwards;
-            }
-
             @keyframes shine-menu{
                 0%{
                 color: #fff;
@@ -210,6 +124,7 @@
                     filter: drop-shadow(0 0 10px rgba(27, 217, 77, 0.3));
                     backdrop-filter: none;
                 }
+
                 100%{
                 color: rgba(255, 255, 255, 1.0);
                 backdrop-filter: blur(15px);
@@ -219,27 +134,35 @@
             li:nth-child(1) a{
                 animation-name: shine-menu;
                 animation-delay: 3s;
-                animation-duration: 2s;
+                animation-duration: 1.8s;
             }
 
             li:nth-child(2) a{
                 animation-name: shine-menu;
-                animation-delay: 4s;
-                animation-duration: 2s;
+                animation-delay: 3.5s;
+                animation-duration: 1.8s;
             }
 
             li:nth-child(3) a{
                 animation-name: shine-menu;
-                animation-delay: 5s;
-                animation-duration: 2s;
+                animation-delay: 4s;
+                animation-duration: 1.8s;
             }
 
             li:nth-child(4) a{
                 animation-name: shine-menu;
-                animation-delay: 6s;
-                animation-duration: 2s;
+                animation-delay: 4.5s;
+                animation-duration: 1.8s;
             }
 
         }
     }
+}
+
+@media (max-width: 981px) {
+    nav{
+        ul{
+            visibility: hidden;
+        }  
+    } 
 }
