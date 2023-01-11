@@ -160,3 +160,19 @@
         }
     }
 }
+
+@media (max-width: 487px){
+    .inicio{
+        //background-color: #ff0000;
+        flex-direction: column;
+
+        .welcome .my-name{
+            font-size: 3rem;
+        }
+
+        .contact .contact-infs{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}

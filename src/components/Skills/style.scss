@@ -180,3 +180,15 @@
   }
 
 }
+
+@media (max-width: 487px){
+    .skills{
+        overflow: unset;
+
+        .skills-container{
+            top: 0%;
+            left: 0%;
+            transform: translate(0%, 0%);
+        }
+    }
+}
